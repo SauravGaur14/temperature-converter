@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img id="logo" src="assets/logo.jpeg"/>
+        <p>Temperature Converter</p>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <form class="form">
+          <div class="select-container">
+            <select id="conversionType">
+              <option value="C2F">Celsius to Fahrenheit</option>
+              <option value="F2C">Fahrenheit to Celsius</option>
+              <option value="C2K">Celsius to Kelvin</option>
+            </select>
+          </div>
+          <input type="number" id="inputTemp" class="input" />
+          <input type="button" value="Convert" id="convertBtn" />
+        </form>
+        
+        <p class="converted" id="result">Converted value : </p>
+      </div>
+    </main>
+  </body>
+</html>
